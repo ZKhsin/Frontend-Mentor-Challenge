@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .attribution a {
+      font-size: 11px;
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Learn to code by <span>watching others</span></h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </header>
+
+    <div class="content">
+      <p class="free">
+        <strong>Try it free 7 days </strong>then $20/mo. thereafter
+      </p>
+
+      <form class="form">
+        <div class="form-input">
+          <label for="first-name"></label>
+          <input type="text" id="first-name" placeholder="First Name">
+          <img class="errorImg" src="/images/icon-error.svg" alt="error">
+          <span class="errorSpan">Error message</span>
+        </div>
+        <div class="form-input">
+          <label for="last-name"></label>
+          <input type="text" id="last-name" placeholder="Last Name">
+          <img class="errorImg" src="/images/icon-error.svg" alt="error">
+          <span class="errorSpan">Error message</span>
+        </div>
+        <div class="form-input">
+          <label for="email"></label>
+          <input type="text" id="email" placeholder="Email Address">
+          <img class="errorImg" src="/images/icon-error.svg" alt="error">
+          <span class="errorSpan">Error message</span>
+        </div>
+        <div class="form-input">
+          <label for="password"></label>
+          <input type="password" id="password" placeholder="Password">
+          <img class="errorImg" src="/images/icon-error.svg" alt="error">
+          <span class="errorSpan">Error message</span>
+        </div>
+        <button class="submit" type="submit">Claim your free trial</button>
+        <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+      </form>
+    </div>
+
+  </div>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Hsin</a>.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

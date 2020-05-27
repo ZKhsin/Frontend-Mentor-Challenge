@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --light-cyan: rgb(74, 190, 189);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: var(--light-gray);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 70px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px var(--grayish-blue);
+}
+
+.join,
+.subscription,
+.why-us {
+  padding: 30px 25px;
+}
+
+.join {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: var(--grayish-blue);
+}
+
+.join h1 {
+  color: var(--cyan);
+  margin-bottom: 25px;
+  font-size: 1.32rem;
+}
+
+.join h2 {
+  color: var(--bright-yellow);
+  margin-bottom: 20px;
+}
+
+.join p {
+  line-height: 1.7;
+  font-size: 0.85rem;
+}
+
+.subscription {
+  background-color: var(--cyan);
+  color: var(--light-gray);
+}
+
+.subscription h1 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.subscription h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subscription small {
+  font-weight: 400;
+  color: rgb(158, 223, 222);
+  vertical-align: middle;
+}
+
+.subscription p {
+  margin-bottom: 30px;
+}
+
+.subscription button {
+  background-color: var(--bright-yellow);
+  color: var(--light-gray);
+  border: 0;
+  width: 100%;
+  height: 45px;
+  border-radius: 10px;
+  outline: 0;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.why-us {
+  background-color: var(--light-cyan);
+  color: var(--light-gray);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.why-us h1 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.why-us p {
+  color: rgb(158, 223, 222);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 700px) {
+  .container {
+    width: 100%;
+    max-width: 636px;
+    display: grid;
+    grid-template-columns: 318px 318px;
+  }
+
+  .join,
+  .subscription,
+  .why-us {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .join {
+    grid-column: span 2;
+  }
+
+  .join h1 {
+    font-size: 1.45rem;
+  }
+
+  .join h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  .join p {
+    font-size: 1rem;
+  }
+
+  .subscription {
+    border-bottom-left-radius: 10px;
+  }
+
+  .subscription p {
+    font-size: 0.95rem;
+  }
+
+  .why-us {
+    border-bottom-left-radius: 0;
+  }
+}
