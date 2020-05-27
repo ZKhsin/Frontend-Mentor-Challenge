@@ -154,7 +154,7 @@ header img {
 
 @media screen and (min-width: 1280px) {
   html {
-    background-image: url("/images/bg-pattern-desktop.svg");
+    background-image: url("./images/bg-pattern-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -162,7 +162,7 @@ header img {
   body {
     position: relative;
     background-position-x: 100%;
-    background-image: url("/images/hero-desktop.jpg");
+    background-image: url("./images/hero-desktop.jpg");
     background-repeat: no-repeat;
   }
 
