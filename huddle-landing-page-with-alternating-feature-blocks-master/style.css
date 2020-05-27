@@ -33,7 +33,7 @@ button:focus {
 
 .header {
   width: 100%;
-  background: var(--very-pale-cyan) url(/images/bg-hero-mobile.svg);
+  background: var(--very-pale-cyan) url(./images/bg-hero-mobile.svg);
   background-size: cover;
   color: var(--very-dark-cyan);
 }
